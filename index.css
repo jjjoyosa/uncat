@@ -1,0 +1,61 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html,
+
+body {
+    background-color: #0b0c10;
+    overflow-x: hidden;
+    font-family: 'Archivo Black';
+    padding-top: 4rem;
+    
+}
+
+h1 {
+    color: #c5c6c7;
+}
+
+.nav-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+    background-color: rgba(0, 0, 0, 0.94); /* Black color with 70% opacity */
+    /* Add any other styles you want for the fixed navigation bar */
+}
+@keyframes customBounce {
+    30% {
+        transform: scale(1.2);
+    }
+
+    40%,
+    60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.about-logos {
+    animation: customBounce 1.5s infinite;
+}
+.w-full button:hover .svgg path {
+    fill: black;
+}
+
+.imag {
+    height: auto;
+    width: 20%;
+}

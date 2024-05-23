@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo Black';
+    background-color: #0b0c10;
+    color: #fff;
+    overflow: hidden;
+}
+.text-cyan-gradient {
+    background-image: linear-gradient(to right, cyan, violet);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.neon {
+    color: #66fcf1;
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
+}
+
+.nav-main a {
+    color: cyan;
+}
+
+.nav-main a:hover {
+    color: pink;
+}
+
+button {
+    border: 1px solid #fff;
+    border-radius: 9999px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#game-board {
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(6, 60px);
+    position: relative;
+    border: 2px solid transparent; /* Transparent border */
+    border-color: #fff;
+    border-image-slice: 1; /* Ensure the gradient covers the entire border */
+}
+
+
+.block {
+    position: absolute;
+    background-color: #333; /* Dark background to match the theme */
+    color: cyan; /* Text color to match the theme */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid cyan; /* Cyan border to match the theme */
+    box-sizing: border-box; /* Include border in the element's width and height */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.block:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 0 10px cyan; /* Glow effect on hover */
+}
+
+.block.red {
+    border: none;
+    box-sizing: border-box;
+    background-image: url('cat.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire block */
+    background-position: center; /* Center the image within the block */
+}
+
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222; /* Dark background to match the theme */
+    border: 2px solid cyan; /* Cyan border to match the theme */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Cyan glow effect */
+    padding: 20px;
+    z-index: 1000;
+    color: #fff; /* Text color to match the theme */
+}
+
+.dialog-content {
+    text-align: center;
+}
+
+.dialog-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: cyan; /* Text color to match the theme */
+}
+
+.dialog-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid cyan; /* Cyan border to match the theme */
+    background-color: #333; /* Dark background to match the theme */
+    color: cyan; /* Text color to match the theme */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.dialog-content button:hover {
+    background-color: cyan; /* Cyan background on hover */
+    color: #333; /* Dark text color on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
