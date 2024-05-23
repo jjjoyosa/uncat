@@ -79,7 +79,8 @@ button:hover {
 .block.red {
     border: none;
     box-sizing: border-box;
-    background-image: url('cat.jpg'); /* Replace with your image path */
+    background-color: #222;
+    background-image: url('catt.png'); /* Replace with your image path */
     background-size: cover; /* Ensure the image covers the entire block */
     background-position: center; /* Center the image within the block */
 }
