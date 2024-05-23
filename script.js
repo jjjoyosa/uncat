@@ -62,7 +62,7 @@ function onTouchMove(event) {
     if (!gameWon && selectedBlock.color === 'red' && selectedBlock.x + selectedBlock.width === boardSize) {
         // Refresh the page
         gameWon = true;
-        window.location.href = '/welcome';
+        window.location.href = 'page.html';
     }
 
     renderBoard();
@@ -123,7 +123,7 @@ function onBlockMouseMove(event) {
     if (!gameWon && selectedBlock.color === 'red' && selectedBlock.x + selectedBlock.width === boardSize) {
         // Refresh the page
         gameWon = true;
-        window.location.href = '/welcome';
+        window.location.href = 'page.html';
     }
 
     renderBoard();
