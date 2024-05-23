@@ -50,6 +50,7 @@ button:hover {
     position: relative;
     border: 2px solid transparent; /* Transparent border */
     border-color: #fff;
+    border-right-color: red;
     border-image-slice: 1; /* Ensure the gradient covers the entire border */
 }
 
