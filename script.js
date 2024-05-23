@@ -5,16 +5,15 @@ const gameBoard = document.getElementById('game-board');
 // Initial game state
 const initialBlocks = [
     {id: 1, x: 0, y: 2, width: 1, height: 1, color: 'red', horizontal: true},
-    {id: 2, x: 0, y: 0, width: 2, height: 1, color: 'grey', horizontal: true},
+    {id: 2, x: 0, y: 0, width: 3, height: 1, color: 'grey', horizontal: true},
     {id: 3, x: 4, y: 1, width: 1, height: 3, color: 'grey', horizontal: false},
     {id: 4, x: 0, y: 3, width: 1, height: 3, color: 'grey', horizontal: false},
     {id: 5, x: 2, y: 4, width: 3, height: 1, color: 'grey', horizontal: true},
-    {id: 6, x: 1, y: 5, width: 3, height: 1, color: 'grey', horizontal: true},
+    {id: 6, x: 3, y: 5, width: 3, height: 1, color: 'grey', horizontal: true},
     {id: 7, x: 1, y: 3, width: 1, height: 2, color: 'grey', horizontal: false},
-    {id: 8, x: 5, y: 3, width: 1, height: 3, color: 'grey', horizontal: false},
+    {id: 8, x: 5, y: 2, width: 1, height: 2, color: 'grey', horizontal: false},
     {id: 9, x: 5, y: 0, width: 1, height: 2, color: 'grey', horizontal: false},
     {id: 10, x: 3, y: 0, width: 1, height: 3, color: 'grey', horizontal: false},
-    {id: 11, x: 2, y: 0, width: 1, height: 2, color: 'grey', horizontal: false},
 ];
 
 let blocks = JSON.parse(JSON.stringify(initialBlocks));
