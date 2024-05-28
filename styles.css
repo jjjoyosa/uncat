@@ -80,7 +80,7 @@ button:hover {
     border: none;
     box-sizing: border-box;
     background-color: #222;
-    background-image: url('trump.png'); /* Replace with your image path */
+    background-image: url('trumpp.png'); /* Replace with your image path */
     background-size: cover; /* Ensure the image covers the entire block */
     background-position: center; /* Center the image within the block */
 }
