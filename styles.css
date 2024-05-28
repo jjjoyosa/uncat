@@ -80,7 +80,7 @@ button:hover {
     border: none;
     box-sizing: border-box;
     background-color: #222;
-    background-image: url('trumpp.png'); /* Replace with your image path */
+    background-image: url('catt.png'); /* Replace with your image path */
     background-size: cover; /* Ensure the image covers the entire block */
     background-position: center; /* Center the image within the block */
 }
@@ -124,4 +124,3 @@ button:hover {
     color: #333; /* Dark text color on hover */
     transform: scale(1.05); /* Slightly larger on hover */
 }
-
